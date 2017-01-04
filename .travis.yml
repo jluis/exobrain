@@ -29,7 +29,7 @@ install:
     - cpanm --notest ExtUtils::MakeMaker
     
     # New Dist::Ailla needs 5.16 but   
-    - cpan --notest Test::TCP
+    - cpanm --notest Test::TCP
     
     - dzil authordeps         | cpanm --notest --skip-satisfied
     - dzil listdeps --author  | cpanm --notest --skip-satisfied
